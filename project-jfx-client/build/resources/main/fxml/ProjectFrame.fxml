@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="564.0" prefWidth="981.0" styleClass="main-container" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.controller.ProjectController">
+   <top>
+      <VBox prefHeight="130.0" prefWidth="981.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="981.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtSzukaj" prefWidth="250.0" promptText="Szukaj..." />
+                  <Button mnemonicParsing="false" onAction="#onActionBtnSzukaj" text="Szukaj" />
+                  
+                  <Region HBox.hgrow="ALWAYS" />
+                  
+                  <Label text="Rozmiar strony:" />
+                  <ChoiceBox fx:id="cbPageSizes" prefWidth="60.0" />
+                  
+                  <Region HBox.hgrow="ALWAYS" />
+                  
+                  <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#onActionBtnDodaj" text="Dodaj" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+				<children>
+				   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+				      <children>
+				         <Button fx:id="btnPierwsza" mnemonicParsing="false" onAction="#onActionBtnPierwsza" text="❙◄" />
+				         <Button fx:id="btnWstecz" mnemonicParsing="false" onAction="#onActionBtnWstecz" text="◄" />
+				      </children>
+				   </HBox>
+				   
+				   <Label fx:id="lblStrona" alignment="CENTER" text="strona 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+				   
+				   <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2">
+				      <children>
+				         <Button fx:id="btnDalej" mnemonicParsing="false" onAction="#onActionBtnDalej" text="►" />
+				         <Button fx:id="btnOstatnia" mnemonicParsing="false" onAction="#onActionBtnOstatnia" text="►❙" />
+				      </children>
+				   </HBox>
+				</children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="15.0" />
+         </padding>
+      </VBox>
+   </top>
+	<center>
+	      <TableView fx:id="tblProjekt" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+	        <columns>
+	          <TableColumn fx:id="colId" prefWidth="83.33334541320801" text="Id" />
+	          <TableColumn fx:id="colNazwa" prefWidth="180.66666412353516" text="Nazwa" />
+	          <TableColumn fx:id="colOpis" prefWidth="213.33331298828125" text="Opis" />
+	          <TableColumn fx:id="colDataCzasUtworzenia" prefWidth="149.99996948242188" text="Data utworzenia" />
+	          <TableColumn fx:id="colDataOddania" minWidth="0.0" prefWidth="151.9998779296875" text="Data oddania" />
+	        </columns>
+	         <BorderPane.margin>
+	            <Insets bottom="15.0" left="20.0" right="20.0" top="10.0" />
+	         </BorderPane.margin>
+	      </TableView>
+	   </center>
+</BorderPane>

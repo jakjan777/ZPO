@@ -42,6 +42,7 @@ public class ProjektServiceImpl implements ProjektService {
    @Override 
    @Transactional 
    public void deleteProjekt(Integer projektId) { 
+      projektRepository.deleteProjektStudentByProjektId(projektId);
       for (Zadanie zadanie : zadanieRepository.findZadaniaProjektu(projektId)) { 
          zadanieRepository.delete(zadanie); 
       } 
@@ -69,7 +70,9 @@ public class ProjektServiceImpl implements ProjektService {
    }
 
    @Override
+   @Transactional
    public void deleteStudent(Integer studentId) {
+	studentRepository.deleteProjektStudentByStudentId(studentId);
 	studentRepository.deleteById(studentId);
    }
 
@@ -90,6 +93,10 @@ public class ProjektServiceImpl implements ProjektService {
 
    @Override
    public Zadanie setZadanie(Zadanie zadanie) {
+	if (zadanie.getProjekt() != null && zadanie.getProjekt().getProjektId() != null) {
+		Projekt projekt = projektRepository.getReferenceById(zadanie.getProjekt().getProjektId());
+		zadanie.setProjekt(projekt);
+	}
 	return zadanieRepository.save(zadanie);
    }
 

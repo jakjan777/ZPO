@@ -1,0 +1,37 @@
+2026-06-25 11:02:34.147 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStarting(53) - Starting ProjectWebAppApplication using Java 21.0.10 with PID 58132 (C:\Users\jakja\eclipse-workspace\project-web-app\bin\main started by jakja in C:\Users\jakja\eclipse-workspace\project-web-app)
+2026-06-25 11:02:34.158 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 11:02:37.483 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStarted(59) - Started ProjectWebAppApplication in 4.292 seconds (process running for 7.932)
+2026-06-25 11:03:11.475 [http-nio-8081-exec-1] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:03:20.256 [http-nio-8081-exec-4] INFO  c.project.service.ProjektServiceImpl.getProjekt(40) - REQUEST -> GET /api/projekty/5
+2026-06-25 11:03:23.754 [http-nio-8081-exec-6] INFO  c.project.service.ProjektServiceImpl.setProjekt(56) - REQUEST -> PUT /api/projekty/5
+2026-06-25 11:03:24.217 [http-nio-8081-exec-7] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:03:27.751 [http-nio-8081-exec-9] INFO  c.project.service.ZadanieServiceImpl.getZadania(111) - REQUEST -> GET /api/zadania?page=0&size=20&sort=
+2026-06-25 11:03:30.608 [http-nio-8081-exec-1] INFO  c.project.service.ZadanieServiceImpl.getZadanie(40) - REQUEST -> GET /api/zadania/9
+2026-06-25 11:03:30.796 [http-nio-8081-exec-1] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=100&sort=nazwa,ASC
+2026-06-25 11:03:33.953 [http-nio-8081-exec-3] INFO  c.project.service.ZadanieServiceImpl.setZadanie(56) - REQUEST -> PUT /api/zadania/9
+2026-06-25 11:03:34.164 [http-nio-8081-exec-4] INFO  c.project.service.ZadanieServiceImpl.getZadania(111) - REQUEST -> GET /api/zadania?page=0&size=20&sort=
+2026-06-25 11:03:36.431 [http-nio-8081-exec-6] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 11:03:38.783 [http-nio-8081-exec-8] INFO  c.project.service.StudentServiceImpl.getStudent(40) - REQUEST -> GET /api/studenci/6
+2026-06-25 11:05:32.779 [http-nio-8081-exec-2] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:05:36.292 [http-nio-8081-exec-4] INFO  c.project.service.ProjektServiceImpl.getProjekt(40) - REQUEST -> GET /api/projekty/2
+2026-06-25 11:05:51.231 [http-nio-8081-exec-7] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:05:57.269 [http-nio-8081-exec-9] INFO  c.project.service.ProjektServiceImpl.getProjekt(40) - REQUEST -> GET /api/projekty/4
+2026-06-25 11:06:37.730 [http-nio-8081-exec-3] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:06:42.391 [http-nio-8081-exec-5] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 11:07:16.501 [http-nio-8081-exec-7] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:07:35.328 [http-nio-8081-exec-9] INFO  c.project.service.ZadanieServiceImpl.getZadania(111) - REQUEST -> GET /api/zadania?page=0&size=20&sort=
+2026-06-25 11:08:07.495 [http-nio-8081-exec-2] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2026-06-25 11:08:16.981 [http-nio-8081-exec-6] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 11:08:19.787 [http-nio-8081-exec-8] INFO  c.project.service.StudentServiceImpl.getStudent(40) - REQUEST -> GET /api/studenci/3
+2026-06-25 11:08:37.337 [http-nio-8081-exec-1] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 11:08:41.127 [http-nio-8081-exec-3] INFO  c.project.service.ZadanieServiceImpl.getZadania(111) - REQUEST -> GET /api/zadania?page=0&size=20&sort=
+2026-06-25 11:08:45.060 [http-nio-8081-exec-5] INFO  c.project.service.ZadanieServiceImpl.getZadanie(40) - REQUEST -> GET /api/zadania/6
+2026-06-25 11:08:45.272 [http-nio-8081-exec-5] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=100&sort=nazwa,ASC
+2026-06-25 18:13:19.260 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStarting(53) - Starting ProjectWebAppApplication using Java 21.0.10 with PID 58200 (C:\Users\jakja\eclipse-workspace\project-web-app\bin\main started by jakja in C:\Users\jakja\eclipse-workspace\project-web-app)
+2026-06-25 18:13:19.263 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 18:13:28.230 [restartedMain] INFO  c.project.ProjectWebAppApplication.logStarted(59) - Started ProjectWebAppApplication in 14.047 seconds (process running for 17.682)
+2026-06-25 18:18:30.249 [http-nio-8081-exec-2] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 18:18:42.335 [http-nio-8081-exec-6] INFO  c.project.service.StudentServiceImpl.getStudenci(111) - REQUEST -> GET /api/studenci?page=0&size=20&sort=
+2026-06-25 18:18:43.652 [http-nio-8081-exec-8] INFO  c.project.service.ZadanieServiceImpl.getZadania(111) - REQUEST -> GET /api/zadania?page=0&size=20&sort=
+2026-06-25 18:18:46.869 [http-nio-8081-exec-2] INFO  c.project.service.ZadanieServiceImpl.getZadanie(40) - REQUEST -> GET /api/zadania/6
+2026-06-25 18:18:47.084 [http-nio-8081-exec-2] INFO  c.project.service.ProjektServiceImpl.getProjekty(111) - REQUEST -> GET /api/projekty?page=0&size=100&sort=nazwa,ASC

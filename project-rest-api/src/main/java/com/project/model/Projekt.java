@@ -48,6 +48,8 @@ public class Projekt {
 	@Column(nullable = false, length = 50)
 	private String nazwa;
 
+	@NotBlank(message = "Pole opis nie może być puste!")
+	@Size(max = 500, message = "Pole opis może zawierać maksymalnie {max} znaków!")
 	@Column(length = 500)
 	private String opis;
 
@@ -70,6 +72,7 @@ public class Projekt {
 	@JoinTable(name = "projekt_student",
 			joinColumns = { @JoinColumn(name = "projekt_id") },
 			inverseJoinColumns = { @JoinColumn(name = "student_id") })
+	@JsonIgnoreProperties({ "projekty" })
 	private Set<Student> studenci;
 
 	public Integer getProjektId() {
@@ -88,11 +91,51 @@ public class Projekt {
 		this.nazwa = nazwa;
 	}
 
+	public String getOpis() {
+		return opis;
+	}
+
 	public void setOpis(String opis) {
 		this.opis = opis;
 	}
 
+	public LocalDate getDataOddania() {
+		return dataOddania;
+	}
+
 	public void setDataOddania(LocalDate dataOddania) {
 		this.dataOddania = dataOddania;
+	}
+
+	public LocalDateTime getDataczasUtworzenia() {
+		return dataczasUtworzenia;
+	}
+
+	public void setDataczasUtworzenia(LocalDateTime dataczasUtworzenia) {
+		this.dataczasUtworzenia = dataczasUtworzenia;
+	}
+
+	public LocalDateTime getDataczasModyfikacji() {
+		return dataczasModyfikacji;
+	}
+
+	public void setDataczasModyfikacji(LocalDateTime dataczasModyfikacji) {
+		this.dataczasModyfikacji = dataczasModyfikacji;
+	}
+
+	public List<Zadanie> getZadania() {
+		return zadania;
+	}
+
+	public void setZadania(List<Zadanie> zadania) {
+		this.zadania = zadania;
+	}
+
+	public Set<Student> getStudenci() {
+		return studenci;
+	}
+
+	public void setStudenci(Set<Student> studenci) {
+		this.studenci = studenci;
 	}
 } 

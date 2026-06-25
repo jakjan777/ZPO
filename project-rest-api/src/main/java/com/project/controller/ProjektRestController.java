@@ -61,7 +61,7 @@ public class ProjektRestController {
 @PathVariable("projektId") Integer projektId) { 
       return projektService.getProjekt(projektId) 
             .map(p -> { 
-                  projektService.setProjekt(projekt); 
+                  projektService.setProjekt(projekt);
                   return new ResponseEntity<Void>(HttpStatus.OK); // 200 (można też zwracać 204 - No content) 
                  })  
             .orElseGet(() -> ResponseEntity.notFound().build()); // 404 - Not found  

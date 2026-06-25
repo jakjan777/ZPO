@@ -1,23 +1,6 @@
-2026-06-20 13:23:02.454 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarting(54) - Starting ProjectRestApiApplication using Java 25 with PID 21684 (C:\Users\jakja\eclipse-workspace\project-rest-api\bin\main started by jakja in C:\Users\jakja\eclipse-workspace\project-rest-api)
-2026-06-20 13:23:02.455 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
-2026-06-20 13:23:03.750 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarted(60) - Started ProjectRestApiApplication in 1.396 seconds (process running for 3173.119)
-2026-06-20 13:25:15.902 [Test worker] INFO  c.p.ProjectRestApiApplicationTests.logStarting(54) - Starting ProjectRestApiApplicationTests using Java 21.0.10 with PID 24536 (started by jakja in C:\Users\jakja\eclipse-workspace\project-rest-api)
-2026-06-20 13:25:15.905 [Test worker] INFO  c.p.ProjectRestApiApplicationTests.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
-2026-06-20 13:25:24.455 [Test worker] INFO  c.p.ProjectRestApiApplicationTests.logStarted(60) - Started ProjectRestApiApplicationTests in 8.95 seconds (process running for 10.574)
-2026-06-20 13:25:24.965 [Test worker] INFO  c.p.c.ProjektRestControllerIT.logStarting(54) - Starting ProjektRestControllerIT using Java 21.0.10 with PID 24536 (started by jakja in C:\Users\jakja\eclipse-workspace\project-rest-api)
-2026-06-20 13:25:24.965 [Test worker] INFO  c.p.c.ProjektRestControllerIT.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
-2026-06-20 13:25:25.955 [Test worker] INFO  c.p.c.ProjektRestControllerIT.logStarted(60) - Started ProjektRestControllerIT in 1.036 seconds (process running for 12.075)
-2026-06-20 13:25:26.048 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> createProjekt_whenEmptyName_returnsBadRequest
-2026-06-20 13:25:27.135 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- createProjekt_whenEmptyName_returnsBadRequest
-2026-06-20 13:25:27.155 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> updateProjekt_whenValidData_returnsOk
-2026-06-20 13:25:27.325 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- updateProjekt_whenValidData_returnsOk
-2026-06-20 13:25:27.345 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> createProjekt_whenValidData_returnsCreatedWithLocation
-2026-06-20 13:25:27.402 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- createProjekt_whenValidData_returnsCreatedWithLocation
-2026-06-20 13:25:27.418 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> getProjekty_whenAvailable_returnsPagedContent
-2026-06-20 13:25:27.800 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- getProjekty_whenAvailable_returnsPagedContent
-2026-06-20 13:25:27.816 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> getProjekt_whenValidId_returnsProjekt
-2026-06-20 13:25:27.836 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- getProjekt_whenValidId_returnsProjekt
-2026-06-20 13:25:27.848 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> getProjekt_whenInvalidId_returnsNotFound
-2026-06-20 13:25:27.856 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- getProjekt_whenInvalidId_returnsNotFound
-2026-06-20 13:25:27.869 [Test worker] INFO  c.p.c.ProjektRestControllerIT.before(213) - -- METODA -> getProjekty_withPagingParams_passesParamsToService
-2026-06-20 13:25:27.929 [Test worker] INFO  c.p.c.ProjektRestControllerIT.after(218) - <- KONIEC -- getProjekty_withPagingParams_passesParamsToService
+2026-06-25 11:02:31.485 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarting(54) - Starting ProjectRestApiApplication using Java 21.0.10 with PID 2836 (C:\Users\jakja\eclipse-workspace\project-rest-api\bin\main started by jakja in C:\Users\jakja\eclipse-workspace\project-rest-api)
+2026-06-25 11:02:31.495 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 11:02:41.154 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarted(60) - Started ProjectRestApiApplication in 10.433 seconds (process running for 20.228)
+2026-06-25 18:13:15.430 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarting(54) - Starting ProjectRestApiApplication using Java 21.0.10 with PID 36016 (C:\Users\jakja\eclipse-workspace\project-rest-api\bin\main started by jakja in C:\Users\jakja\eclipse-workspace\project-rest-api)
+2026-06-25 18:13:15.440 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 18:13:37.740 [restartedMain] INFO  c.project.ProjectRestApiApplication.logStarted(60) - Started ProjectRestApiApplication in 24.538 seconds (process running for 36.495)

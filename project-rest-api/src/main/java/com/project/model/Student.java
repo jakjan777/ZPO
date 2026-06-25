@@ -2,6 +2,9 @@ package com.project.model;
 
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import jakarta.validation.constraints.Email;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -48,10 +51,72 @@ public class Student {
 	@Column(name = "nr_indeksu", nullable = false, unique = true, length = 20)
 	private String nrIndeksu;
 
+	@NotBlank(message = "Pole email nie może być puste!")
+	@Email(message = "Adres email jest niepoprawny!")
+	@Size(max = 50, message = "Email może zawierać do {max} znaków!")
+	@Column(length = 50)
+	private String email;
+
+	@Column
+	private boolean stacjonarny;
+
 	@ManyToMany(mappedBy = "studenci") 
+	@JsonIgnoreProperties({ "studenci" })
 	private Set<Projekt> projekty; 
 
 	public Integer getStudentId() {
 		return studentId;
+	}
+
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getImie() {
+		return imie;
+	}
+
+	public void setImie(String imie) {
+		this.imie = imie;
+	}
+
+	public String getNazwisko() {
+		return nazwisko;
+	}
+
+	public void setNazwisko(String nazwisko) {
+		this.nazwisko = nazwisko;
+	}
+
+	public String getNrIndeksu() {
+		return nrIndeksu;
+	}
+
+	public void setNrIndeksu(String nrIndeksu) {
+		this.nrIndeksu = nrIndeksu;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public boolean isStacjonarny() {
+		return stacjonarny;
+	}
+
+	public void setStacjonarny(boolean stacjonarny) {
+		this.stacjonarny = stacjonarny;
+	}
+
+	public Set<Projekt> getProjekty() {
+		return projekty;
+	}
+
+	public void setProjekty(Set<Projekt> projekty) {
+		this.projekty = projekty;
 	}
 } 
